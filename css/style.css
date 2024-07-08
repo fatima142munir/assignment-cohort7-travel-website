@@ -1,0 +1,330 @@
+@font-face{
+    font-family: 'Lusitana';
+    src: url('../font/OpenSans-Light.ttf') format('truetype'),
+        url('../font/OpenSans-Light.woff') format('woff'),
+        url('../font/OpenSans-Light.woff2') format('woff2');
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'OpenSans', sans-serif;
+}
+p{
+    color: #666666;
+}
+:root{
+    --white: #ffffff;
+    --yellow:#ffcc00;
+    --seagreen: #3bbfad;
+    --lightgrey: #ededed;
+    --grey: #686868;
+}
+.wrapper, .header, .list, .slider, .gallery, #beauty, .form-div, .travel, #buttondiv, .width{
+    margin: auto;
+}
+#getoffer, .image2 h1, .travel h1, .team-wrapper h2, #buttondiv, .copyright, #social-icons, #read-btn{
+    text-align: center;
+}
+/* for main container */
+.wrapper{
+    width: 100%;
+    background-color: var(--white);
+}
+/* box-size class */
+.box-sizing{
+    box-sizing: border-box;
+}
+/* flex class */
+.flex{
+    display: flex;
+}
+/* width class */
+.thousand{
+    width: 1000px;
+}
+/* for header */
+.header{
+    background-color: var(--white);
+    padding-top: 10px;
+}
+.header-social-icons{
+    border-bottom: 1px solid grey;
+}
+.header-social-icons img{
+    padding-right: 650px;
+    padding-left: 20px;
+}
+.header-social-icons a{
+    text-decoration: none;
+    color: #666666;
+}
+.header li{
+    display: inline;
+    padding:0px 30px 30px 0px;
+}
+.header li a{
+    text-decoration:none;
+    font-size: small;
+}
+/* for logo */
+.logo{
+    padding: 15px;
+}
+.logo a{
+    text-decoration: none;
+    color: var(--seagreen);
+}
+/* for get offer div */
+#getoffer{
+    width: 50px;
+    background-color: var(--seagreen);
+    padding: 5px;
+    border-radius: 5px;
+}
+#getoffer a{
+    text-decoration: none;
+    color: var(--white);
+}
+/* for navigatiion list */
+.list{
+    width: 600px;
+}
+.list a{
+    color: var(--seagreen);
+}
+/* background after header */
+.image{
+    height: 500px;
+    background-image: url('../images/fairy-meadows2.jpg');
+    background-size: cover;
+}
+/* css for slider*/
+.slider{
+    width: 1000px;
+    box-sizing: border-box;
+    background-color: var(--lightgrey);
+}
+.imgs{
+    width: 330px;
+    height: 300px;
+    box-sizing: border-box;
+}
+/* for gallery page */
+.gallery{
+    width: 90%;
+}
+.gallery img{
+    transition: 1s;
+    padding: 15px;
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+}
+.gallery img:hover{
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+/* for FAQ's page */
+#beauty{
+    height:auto;
+    padding: 5px;
+    border: 2px dashed black;
+}
+/* for contact and booking page */
+.form-main-div{
+    background-image: url("../images/photo-1486496146582-9ffcd0b2b2b7.jpg");
+    background-size: cover;
+    width: 100%;
+}
+.form-div{
+    width: 1000px;
+    box-sizing: border-box;
+}
+.form-div div{
+    padding: 20px;
+}
+.h1{
+    text-align: center;
+    background-color:var(--seagreen);
+    color: var(--white);
+}
+#name, #lastName, #email, #nic, #phone, #travelDate, #arrivalCity, #departureCity{
+    width: 250px;
+    height: 20px;
+    padding: 5px;
+}
+#simpleForm{
+    opacity: 0.50;
+    background-color: var(--white);
+    padding: 10px;
+}
+#simpleForm legend{
+    color: var(--grey);
+    text-decoration: underline 2px var(--grey);
+}
+#simpleForm label{
+    font-weight: 700;
+}
+#submit{
+    width: 200px;
+    height: 50px;
+    background-color:var(--yellow);
+    font-weight: 700;
+    color: var(--white);
+}
+/* for contact form */
+legend{
+    font-weight: 700;
+}
+fieldset{
+    padding: 20px;
+}
+
+/* for background 2 */
+.image2{
+    display: flex;
+}
+.image2 > div{
+    width: 50%;
+    height: 500px;
+}
+.girl{
+    background-image: url("../images/girl.jpg");
+    background-size: cover;
+}
+.image2 h1{
+    padding-top: 50px;
+}
+.contact{
+    width: 600px;
+    padding: 20px;
+}
+.contact div{
+    width: 300px;
+    height: 350px;
+}
+.contact img{
+    width: 280px;
+    height: 280px;
+}
+#read-more{
+    padding: 20px;
+}
+#read-more a{
+    text-decoration: none;
+    color: var(--white);
+}
+/* for read more button */
+#read-btn{
+    width: 150px;
+    height: 20px;
+    background-color: var(--seagreen);
+    padding: 5px;
+    margin-top: 50px;
+}
+.flexpara-wrapper{
+    background-color: var(--yellow);
+}
+#flexpara{
+    height: 300px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: auto;
+}
+#flexpara div{
+    width: 250px;
+    padding: 100px;
+}
+.travel{
+    width: 1000px;
+    padding: 50px;
+}
+#icons{
+    flex-wrap: wrap;
+    padding: 20px;
+}
+#icons div{
+    width: 300px;
+    /* padding-left: 20px; */
+    margin: auto;
+}
+/* for align right side */
+#icons-h3, #icons-h32{
+    padding-right: 40px;
+}
+#icons-h3 h3, #icons-h32 h3{
+    text-align: right;
+}
+.team-wrapper{
+    height: 600px;
+    background-color: var(--lightgrey);
+    box-sizing: border-box;
+    padding: 100px;
+}
+/* for contact-div background */
+.contact-div{
+    height: 400px;
+    background-image: url("../images/read.jpg");
+    background-size: cover;
+}
+#buttondiv{
+    height: 300px;
+    padding: 50px;
+}
+#buttondiv a{
+    color: var(--white);
+    text-decoration: none;
+}
+#buttondiv button{
+    width: 150px;
+    padding: 5px;
+    background-color: var(--seagreen);
+}
+#buttondiv h2, #buttondiv p{
+    padding: 20px;
+}
+/* for footer */
+.footer-background{
+    background-color: var(--lightgrey);
+}
+.footer{
+    margin: auto;
+}
+#list-footer{
+    padding: 50px 0px 0px 250px;
+}
+#list-footer li{
+    display: inline;
+    padding: 40px;
+}
+#list-footer a{
+    text-decoration: none;
+    color: var(--seagreen);
+}
+#footer-background{
+    height: 100px;
+    background-image: url("../images/footer-destinations.png") ;
+    background-size: cover;
+}
+#social-icons{
+    padding: 20px;
+    height: 100px;
+    line-height: 2;
+}
+#social-icons h3{
+    color: var(--grey);
+}
+.width{
+    width: 200px;
+}
+.width div{
+    padding: 20px;
+}
+.copyright{
+    padding: 15px;
+}
+.ui-accordion .ui-state-active {
+    background-color: var(--seagreen) !important;
+}
